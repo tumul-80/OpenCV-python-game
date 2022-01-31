@@ -1,3 +1,11 @@
+'''
+This code is of a 'game' which allows the user to change the position of a circle, 
+which is superimposed over a video. It was created for the purpose of an experiment
+where the particiapnt's reaction to changing active speaker were to be determined.
+
+Created by: Tumul Kumar. 2021. 
+'''
+
 import cv2 as cv #import the OpenCV library
 import numpy as np #Import Numpy Library
 import socket  # socket creation for Telnet
