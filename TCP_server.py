@@ -1,8 +1,16 @@
+'''
+This code basically achieves the purpose of creating and accepting connections from TCP clients
+and writes the message and time whenever a new conncection is made. 
+
+Created by: Tumul Kumar. 
+'''
+
 import socket
 from datetime import datetime
 
 
 class TCPServer:
+    # to write out the initial hell_message 
     with open('out.txt', 'w') as output:  # truncating file and writing default
         output.write('Hello\n')
 
@@ -10,7 +18,7 @@ class TCPServer:
         self.host = host
         self.TCP_port = TCP_port  # non-privileged port
         self.sock = None
-
+    # to print the message on the console output with the current date and time
     def print_msg(self, msg):
         current_date_time = datetime.now().strftime('%Y-%m-%d-%H:%M:%S')
         print(current_date_time+ ' JST ' + msg)
